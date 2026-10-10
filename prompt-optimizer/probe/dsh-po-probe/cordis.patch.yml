@@ -1,0 +1,12 @@
+# ============================================================================
+# dsh-po-probe —— DSH bundle patch（照抄 dsh-whale-widget 的挂载声明格式）
+# ============================================================================
+# 本地开发安装：
+#   dsh.cmd plugin --profile web add "link:A:\...\probe\dsh-po-probe"
+# 卸载：
+#   dsh.cmd plugin --profile web remove dsh-po-probe
+# ============================================================================
+
+- insert:
+    - id: dsh-po-probe
+      name: dsh-po-probe

@@ -1,0 +1,17 @@
+{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dependencies": {
+    "dsh-whale-widget": "link:A:/document/studio/agent/deepseek harness/plugin/dsh-whale-widget-0.3.2-package"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-whale-widget"
+      ],
+      "patchReload": "live"
+    }
+  }
+}

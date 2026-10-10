@@ -1,0 +1,30 @@
+{
+  "name": "dsh-prompt-optimizer",
+  "version": "0.1.0",
+  "description": "DSH 提示词优化插件：在输入框提供「直接输出 / 优化输出」模式切换与优化模型选择，用优化模型把会话上下文与最新输入改写为更高质量的提示词后再交给当前会话模型；并在设置页提供多套预设（模型 + 工作说明）",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "prompt",
+    "prompt-optimizer"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "private": true
+}

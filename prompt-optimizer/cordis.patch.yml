@@ -1,0 +1,17 @@
+# ============================================================================
+# dsh-prompt-optimizer —— DSH bundle patch（挂载声明）
+# ============================================================================
+# DSH 启动时按 bundle 层栈叠加各插件 patch，本文件把插件的 host 半边插入
+# Web profile 的配置树。
+#
+# 安装（推荐在插件目录内执行，避免 link: 规格中的空格问题）：
+#   dsh plugin --profile web add <本目录绝对路径或 .>
+#
+# 说明：dsh plugin 会在安装成功后自动把本包追加进 profile 的
+#       dsh.profile.bundles，因此不需要手工编辑任何 profile 配置。
+#       新增 bundle 生效需要重启 dsh web。
+# ============================================================================
+
+- insert:
+    - id: dsh-prompt-optimizer
+      name: dsh-prompt-optimizer
